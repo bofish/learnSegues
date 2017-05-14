@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B5A20F391EC85CD500D169F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F381EC85CD500D169F1 /* AppDelegate.swift */; };
-		B5A20F3B1EC85CD500D169F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F3A1EC85CD500D169F1 /* ViewController.swift */; };
+		B5A20F3B1EC85CD500D169F1 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F3A1EC85CD500D169F1 /* loginVC.swift */; };
 		B5A20F3E1EC85CD500D169F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A20F3C1EC85CD500D169F1 /* Main.storyboard */; };
 		B5A20F401EC85CD500D169F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A20F3F1EC85CD500D169F1 /* Assets.xcassets */; };
 		B5A20F431EC85CD500D169F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A20F411EC85CD500D169F1 /* LaunchScreen.storyboard */; };
 		B5A20F4E1EC85CD600D169F1 /* learnSeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F4D1EC85CD600D169F1 /* learnSeguesTests.swift */; };
 		B5A20F591EC85CD600D169F1 /* learnSeguesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F581EC85CD600D169F1 /* learnSeguesUITests.swift */; };
+		B5A20F671EC85E8C00D169F1 /* musicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F661EC85E8C00D169F1 /* musicList.swift */; };
+		B5A20F691EC8612F00D169F1 /* playingSongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A20F681EC8612F00D169F1 /* playingSongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B5A20F351EC85CD500D169F1 /* learnSegues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnSegues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A20F381EC85CD500D169F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5A20F3A1EC85CD500D169F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5A20F3A1EC85CD500D169F1 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		B5A20F3D1EC85CD500D169F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A20F3F1EC85CD500D169F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5A20F421EC85CD500D169F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		B5A20F541EC85CD600D169F1 /* learnSeguesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnSeguesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A20F581EC85CD600D169F1 /* learnSeguesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnSeguesUITests.swift; sourceTree = "<group>"; };
 		B5A20F5A1EC85CD600D169F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A20F661EC85E8C00D169F1 /* musicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = musicList.swift; sourceTree = "<group>"; };
+		B5A20F681EC8612F00D169F1 /* playingSongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playingSongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				B5A20F381EC85CD500D169F1 /* AppDelegate.swift */,
-				B5A20F3A1EC85CD500D169F1 /* ViewController.swift */,
+				B5A20F3A1EC85CD500D169F1 /* loginVC.swift */,
 				B5A20F3C1EC85CD500D169F1 /* Main.storyboard */,
 				B5A20F3F1EC85CD500D169F1 /* Assets.xcassets */,
 				B5A20F411EC85CD500D169F1 /* LaunchScreen.storyboard */,
 				B5A20F441EC85CD500D169F1 /* Info.plist */,
+				B5A20F661EC85E8C00D169F1 /* musicList.swift */,
+				B5A20F681EC8612F00D169F1 /* playingSongVC.swift */,
 			);
 			path = learnSegues;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A20F3B1EC85CD500D169F1 /* ViewController.swift in Sources */,
+				B5A20F3B1EC85CD500D169F1 /* loginVC.swift in Sources */,
+				B5A20F671EC85E8C00D169F1 /* musicList.swift in Sources */,
+				B5A20F691EC8612F00D169F1 /* playingSongVC.swift in Sources */,
 				B5A20F391EC85CD500D169F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
